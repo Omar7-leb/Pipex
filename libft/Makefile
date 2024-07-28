@@ -48,12 +48,10 @@ SRCS = \
 	str/ft_strrchr.c \
 	str/ft_striteri.c \
 	str/ft_strcmp.c \
-	\
-	get_next_line_bonus.c \
+
 
 OBJS = ${SRCS:.c=.o}
 
-OBJSBONUS = ${BONUS:.c=.o}
 
 CC		= gcc
 RM		= rm -f
@@ -69,7 +67,7 @@ $(NAME): ${OBJS}
 all:	${NAME}
 
 clean:
-		${RM} ${OBJS} ${OBJSBONUS}
+		${RM} ${OBJS}
 
 fclean:	clean
 		${RM} ${NAME}
